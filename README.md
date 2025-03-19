@@ -27,6 +27,7 @@ This report evaluates the performance of GPT in generating structured JSON summa
 - Analysis of Responses:
   
 **2.1. Accuracy and Consistency**
+
 Each generated JSON response contained essential details such as passenger name, passport number, departure and destination cities, flight schedule, airline details, ticket class, and additional services. However, there were noticeable inconsistencies in formatting and missing details across different responses:
 
 First Response: The structure was well-organized, including nested sections for the passenger, flight details, and additional services. However, the price format used a string ("$1500") instead of a numerical value, which may not be ideal for data processing.
@@ -36,7 +37,11 @@ Second Response: This version included an "age" field for the passenger, which w
 
 
 Third Response: This response omitted passenger details entirely, focusing only on flight information. The "seat_number" field was included, which was not in the original prompt, indicating hallucination or deviation from instructions.
+
+
 **2.2. Completeness and Missing Details**
+
+
 While most responses contained the required information, some variations showed missing elements:
 
 The third response lacked passenger information, making it incomplete for a ticket booking system.
@@ -45,6 +50,8 @@ The pricing structure varied between responses, with some including "addons" lik
 
 
 2.3. **Hallucinations and Unnecessary Additions**
+
+
 GPT sometimes added extra fields that were not explicitly requested, such as:
 
 "seat_number" in the third response.
