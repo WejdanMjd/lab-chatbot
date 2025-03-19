@@ -20,10 +20,12 @@ Read the instructions for each cell and provide your answers. Make sure to test 
 - Make a pull request and paste the PR link in the submission field in the Student Portal.
 
 ## Report: Analyzing GPT's Responses for Flight Ticket Booking in JSON Format
-1. Introduction
+- Introduction:
+  
 This report evaluates the performance of GPT in generating structured JSON summaries for flight ticket bookings. Three different prompt variations were tested to determine how well GPT maintains accuracy, consistency, and completeness in its responses. The objective was to assess whether GPT correctly followed the instructions, avoided hallucinations, and provided structured output aligned with real-world flight booking systems.
 
-2. Analysis of Responses
+- Analysis of Responses:
+  
 2.1. Accuracy and Consistency
 Each generated JSON response contained essential details such as passenger name, passport number, departure and destination cities, flight schedule, airline details, ticket class, and additional services. However, there were noticeable inconsistencies in formatting and missing details across different responses:
 
@@ -44,7 +46,7 @@ GPT sometimes added extra fields that were not explicitly requested, such as:
 "priority_boarding" as an addon, which was not part of the prompt.
 These hallucinations suggest that GPT infers information rather than strictly following instructions, which can be problematic in structured data generation.
 
-3. Key Learnings
+- Key Learnings
 Through this exercise, the following key insights were gained:
 
 Precision in prompt design matters: More detailed and structured prompts result in more accurate JSON outputs.
